@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 5</title>
+</head>
+<!--Bài 5: Trên HTML cho hai ô input để người dùng nhập và một ô button khi click vào thì hiển thị ra giá trị của hai ô đó
++ Tinh tổng của giá trị của hai ô đó và hiển thị khi người dùng click vào nút.-->
+<body>
+<input type="number" id="o1" placeholder="Nhập a">
+<input type="number" id="o2" placeholder="Nhập b">
+<button onclick="ketqua()"> click here</button>
+<script>
+    function ketqua(){
+    let a = +document.getElementById('o1').value;
+    let b = +document.getElementById('o2').value;
+    let sum = a +b;
+    let info = "Số a là:"+" "+a+"   " + "Số b là:"+" "+b+"  "+"Tổng 2 số:"+" "+sum
+    document.write(info);
+    alert(info);
+    console.log(info);
+    }
+</script>
+</body>
+</html>
